@@ -54,5 +54,17 @@ def turn
   end
 end
 
+def turn_count
+  tokens = ["X", "O"]
+  counter = 0
+    @board.each do |turn|
+      tokens.each do |token|
+      if turn == token
+        counter += 1
+      end
+    end
+  end
+  counter
+end
 
 end
