@@ -43,7 +43,7 @@ def turn
   input = gets.strip
   index = input_to_index(input)
   # token = "X" || "O"
-  token = current_player(@board)
+  token = current_player
   if valid_move?(index)
     move(index, token)
     display_board
