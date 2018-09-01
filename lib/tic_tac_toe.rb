@@ -38,6 +38,20 @@ def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
 end
 
-
+def turn
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  # token = "X" || "O"
+  token = current_player(@board)
+  if valid_move?(index)
+    move(index, token)
+    display_board
+  else
+    # binding.pry
+    puts "oops! that's not a valid move."
+    turn(board)
+  end
+end
 
 end
