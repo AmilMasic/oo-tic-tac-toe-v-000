@@ -119,7 +119,8 @@ def winner
 # combo = won?
 #  if combo
 if won?
-   @board#[combo[0]]
+  turn_count
+   #@board[combo[0]]
  end
 end
 
