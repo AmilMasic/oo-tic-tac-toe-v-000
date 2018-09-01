@@ -116,11 +116,9 @@ def over?
 end
 
 def winner
-# combo = won?
-#  if combo
-if won?
-  current_player
-   #@board[combo[0]]
+combo = won?
+ if combo
+   @board[combo[0]]
  end
 end
 
