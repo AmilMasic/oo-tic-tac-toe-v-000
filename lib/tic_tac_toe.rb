@@ -115,7 +115,7 @@ def over?
   full? == true || won? || draw? == true
 end
 
-def winner(@board)
+def winner
 combo = won?
  if combo
    @board[combo[0]]
