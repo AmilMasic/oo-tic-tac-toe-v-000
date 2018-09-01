@@ -111,6 +111,15 @@ def draw?
   end
 end
 
+def over?
+  full? == true || won? || draw? == true
+end
 
+def winner
+combo = won?
+ if combo
+   board[combo[0]]
+ end
+end
 
 end
