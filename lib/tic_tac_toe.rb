@@ -116,8 +116,9 @@ def over?
 end
 
 def winner
-combo = won?
- if combo
+# combo = won?
+#  if combo
+if won?
    @board[combo[0]]
  end
 end
