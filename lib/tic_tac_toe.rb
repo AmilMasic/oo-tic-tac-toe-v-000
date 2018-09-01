@@ -50,7 +50,7 @@ def turn
   else
     # binding.pry
     puts "oops! that's not a valid move."
-    turn(board)
+    turn
   end
 end
 
